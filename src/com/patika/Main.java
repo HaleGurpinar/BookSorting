@@ -22,6 +22,7 @@ public class Main {
         books.add(b3);
         books.add(b4);
         books.add(b5);
+        System.out.println("SORTING BY BOOKS TITLE");
         for (Book b: books){
             System.out.println("Book Title: "+ b.getName()+" | "+
                                 "Page Number: "+ b.getPageNumber()+" | "+
@@ -43,6 +44,7 @@ public class Main {
         book.add(b3);
         book.add(b4);
         book.add(b5);
+        System.out.println("SORTING BY BOOKS PAGE NUMBER");
         for (Book b: book){
             System.out.println("Book Title: "+ b.getName()+" | "+
                     "Page Number: "+ b.getPageNumber()+" | "+
