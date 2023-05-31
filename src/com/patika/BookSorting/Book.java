@@ -1,6 +1,4 @@
-package com.patika;
-
-import java.util.Date;
+package com.patika.BookSorting;
 
 public class Book implements Comparable<Book>{
 

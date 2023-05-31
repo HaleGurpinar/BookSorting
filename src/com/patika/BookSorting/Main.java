@@ -1,7 +1,6 @@
-package com.patika;
+package com.patika.BookSorting;
 
 import java.util.Comparator;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class Main {
