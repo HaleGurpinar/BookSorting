@@ -1,5 +1,6 @@
 package com.patika;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -26,6 +27,27 @@ public class Main {
                                 "Page Number: "+ b.getPageNumber()+" | "+
                                     "Author: "+ b.getAuthor()+" | "+
                                         "Publish Year: "+ b.getPublishDate());
+        }
+
+        System.out.println("-------------------------------------------------------------------------------------");
+
+        TreeSet<Book> book= new TreeSet<>(new Comparator<Book>() {
+            @Override
+            public int compare(Book o1, Book o2) {
+                return o1.getPageNumber()-o2.getPageNumber();
+            }
+        });
+
+        book.add(b1);
+        book.add(b2);
+        book.add(b3);
+        book.add(b4);
+        book.add(b5);
+        for (Book b: book){
+            System.out.println("Book Title: "+ b.getName()+" | "+
+                    "Page Number: "+ b.getPageNumber()+" | "+
+                    "Author: "+ b.getAuthor()+" | "+
+                    "Publish Year: "+ b.getPublishDate());
         }
 
     }
